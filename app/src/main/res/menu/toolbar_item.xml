@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/redirectDialer"
+        android:title="Call"
+        android:icon="@drawable/phone_icon"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/newMessage"
+        android:title="New Message"
+        android:icon="@drawable/message_icon"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/logOut"
+        android:title="Log Out"
+        android:icon="@drawable/logout_icon"
+        app:showAsAction="always"/>
+
+</menu>

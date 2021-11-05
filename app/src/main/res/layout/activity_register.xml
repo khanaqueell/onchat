@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logon.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/imgMainLogo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/main_logo_one"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="Select Photo"
+            android:onClick="chooseImage"
+            android:layout_below="@id/imgMainLogo"
+            android:elevation="0dp"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_btn_bg"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            app:civ_border_width="4dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgMainLogo"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Username"
+            android:layout_below="@id/btnChooseImage"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="7dp"
+            android:padding="15dp"
+            android:background="@drawable/edt_bg"/>
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Email Address"
+            android:layout_marginTop="8dp"
+            android:padding="15dp"
+            android:layout_below="@id/etUsername"
+            android:drawableStart="@drawable/email_icon"
+            android:drawablePadding="7dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edt_bg"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Password"
+            android:layout_marginTop="8dp"
+            android:padding="15dp"
+            android:layout_below="@id/etEmailAddress"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="7dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edt_bg"/>
+
+        <EditText
+            android:id="@+id/etConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Confirm Password"
+            android:layout_marginTop="8dp"
+            android:padding="15dp"
+            android:layout_below="@id/etPassword"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="7dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edt_bg"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/etConfirmPass"
+            android:background="@drawable/btn_bg"
+            android:textColor="#FFF"
+            android:text="Register"/>
+
+        <TextView
+            android:id="@+id/txtSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textColor="#000214"
+            android:layout_below="@+id/btnRegister"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
