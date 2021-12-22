@@ -37,6 +37,7 @@ class RegisterActivity : AppCompatActivity() {
     private val mAuth = FirebaseAuth.getInstance()
     var selectedPhotoUri: Uri? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -49,6 +50,7 @@ class RegisterActivity : AppCompatActivity() {
         etConfirmPass = findViewById(R.id.etConfirmPass)
         btnRegister = findViewById(R.id.btnRegister)
         txtSignIn = findViewById(R.id.txtSignIn)
+
 
         btnRegister.setOnClickListener {
             if (etUsername.length() == 0 && etEmailAdd.length() == 0 && etPassword.length() == 0 && etConfirmPass.length() == 0) {
